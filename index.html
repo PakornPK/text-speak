@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+    <title>English Garamma</title>
+    <style>
+      .btn-outline-primary {
+        color: #fd970d;
+        border-color: #fd970d;
+      }
+      .btn-outline-primary:hover {
+        background-color: #fd970d;
+        color: #fff;
+        border-color: #fd970d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="row">
+            <div class="col-12">
+              <input
+                type="text"
+                class="btn btn-outline-primary"
+                value=""
+                id="syllable"
+                onclick="sendText(document.querySelector('#syllable'))"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="btn btn-outline-success"
+                value=""
+                id="word"
+                onclick="sendText(document.querySelector('#word'))"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <input
+            type="text"
+            class="sentence"
+            value=""
+            id="sentence"
+            name="sentence"
+          />
+          <button
+            class="btn btn-success"
+            onclick="sendTextNext(document.querySelector('#sentence'))"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./assests/js/bootstrap.min.js"></script>
+  </body>
+</html>
